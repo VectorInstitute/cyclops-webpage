@@ -4,26 +4,6 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'Modular',
-    Svg: require('@site/static/img/modular.svg').default,
-    description: (
-      <>
-        CyclOps supports the building of pipelines for complex tasks using
-        modular components that integrate into health data environments
-      </>
-    ),
-  },
-  {
-    title: 'Deployment and operationalization',
-    Svg: require('@site/static/img/deploy.svg').default,
-    description: (
-      <>
-        By leveraging powerful open source tools, CyclOps provides an MLOps
-        platform for health
-      </>
-    ),
-  },
-  {
     title: 'Rigorous evaluation',
     Svg: require('@site/static/img/eval.svg').default,
     description: (
@@ -33,15 +13,35 @@ const FeatureList = [
     ),
   },
   {
+    title: 'Deployment and operationalization',
+    Svg: require('@site/static/img/deploy.svg').default,
+    description: (
+      <>
+        By leveraging powerful open source tools, CyclOps provides a modular and extensible
+        MLOps platform for health
+      </>
+    ),
+  },
+  {
     title: 'Monitoring',
     Svg: require('@site/static/img/mon.svg').default,
     description: (
       <>
-        CyclOps APIs support rigorous evaluation and monitoring of clincial ML
-        models
+        CyclOps supports monitoring of clincial ML models for malignant dataset
+        shifts
       </>
     ),
   },
+  // {
+  //   title: 'Modular',
+  //   Svg: require('@site/static/img/modular.svg').default,
+  //   description: (
+  //     <>
+  //       CyclOps supports the building of pipelines for complex tasks using
+  //       modular components that integrate into health data environments
+  //     </>
+  //   ),
+  // },
 ];
 
 function Feature({ Svg, title, description }) {
