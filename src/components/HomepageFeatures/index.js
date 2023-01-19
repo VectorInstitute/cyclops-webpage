@@ -25,7 +25,7 @@ const FeatureList = [
   },
   {
     title: 'Evaluation and Monitoring centric',
-    Svg: require('@site/static/img/modular.svg').default,
+    Svg: require('@site/static/img/eval_mon.svg').default,
     description: (
       <>
         CyclOps APIs support rigorous evaluation and monitoring of clincial ML
