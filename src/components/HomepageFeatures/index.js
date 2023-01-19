@@ -9,27 +9,36 @@ const FeatureList = [
     description: (
       <>
         CyclOps supports the building of pipelines for complex tasks using
-        modular components.
+        modular components that integrate into health data environments
       </>
     ),
   },
   {
     title: 'Deployment and operationalization',
-    Svg: require('@site/static/img/modular.svg').default,
+    Svg: require('@site/static/img/deploy.svg').default,
     description: (
       <>
         By leveraging powerful open source tools, CyclOps provides an MLOps
-        platform for health.
+        platform for health
       </>
     ),
   },
   {
-    title: 'Evaluation and Monitoring centric',
-    Svg: require('@site/static/img/eval_mon.svg').default,
+    title: 'Rigorous evaluation',
+    Svg: require('@site/static/img/eval.svg').default,
+    description: (
+      <>
+        CyclOps APIs support rigorous evaluation across patient sub-populations
+      </>
+    ),
+  },
+  {
+    title: 'Monitoring',
+    Svg: require('@site/static/img/mon.svg').default,
     description: (
       <>
         CyclOps APIs support rigorous evaluation and monitoring of clincial ML
-        models.
+        models
       </>
     ),
   },
