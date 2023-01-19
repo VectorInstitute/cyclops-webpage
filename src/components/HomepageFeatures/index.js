@@ -15,7 +15,7 @@ const FeatureList = [
   },
   {
     title: 'Deployment and operationalization',
-    Svg: require('@site/static/img/eval_mon.svg').default,
+    Svg: require('@site/static/img/modular.svg').default,
     description: (
       <>
         By leveraging powerful open source tools, CyclOps provides an MLOps
@@ -25,7 +25,7 @@ const FeatureList = [
   },
   {
     title: 'Evaluation and Monitoring centric',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    Svg: require('@site/static/img/modular.svg').default,
     description: (
       <>
         CyclOps APIs support rigorous evaluation and monitoring of clincial ML
