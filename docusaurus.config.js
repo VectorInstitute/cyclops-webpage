@@ -8,7 +8,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'CyclOps',
   tagline: 'Cyclical development towards Operationalizing ML models for health',
-  url: 'https://your-docusaurus-test-site.com',
+  url: 'https://cyclops.page',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -64,18 +64,20 @@ const config = {
         },
         items: [
           {
-            type: 'doc',
-            docId: 'intro',
-            position: 'left',
             label: 'API',
+            to: 'https://vectorinstitute.github.io/cyclops/',
           },
           {
-            type: 'doc',
-            docId: 'intro',
-            position: 'left',
             label: 'Tutorial',
+            to: 'https://vectorinstitute.github.io/cyclops/tutorials.html',
           },
-          { to: '/blog', label: 'Blog', position: 'left' },
+          // {
+          //   type: 'doc',
+          //   docId: 'intro',
+          //   position: 'left',
+          //   label: 'Tutorial',
+          // },
+          // { to: '/blog', label: 'Blog', position: 'left' },
           {
             href: 'https://github.com/VectorInstitute/cyclops',
             label: 'GitHub',
