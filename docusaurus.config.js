@@ -66,11 +66,11 @@ const config = {
         items: [
           {
             label: 'API',
-            to: 'https://vectorinstitute.github.io/cyclops/',
+            to: 'https://vectorinstitute.github.io/cyclops/api',
           },
           {
             label: 'Tutorial',
-            to: 'https://vectorinstitute.github.io/cyclops/tutorials.html',
+            to: 'https://vectorinstitute.github.io/cyclops/api/tutorials',
           },
           // {
           //   type: 'doc',
@@ -94,11 +94,11 @@ const config = {
             items: [
               {
                 label: 'API',
-                to: 'https://vectorinstitute.github.io/cyclops/',
+                to: 'https://vectorinstitute.github.io/cyclops/api',
               },
               {
                 label: 'Tutorial',
-                to: 'https://vectorinstitute.github.io/cyclops/tutorials.html',
+                to: 'https://vectorinstitute.github.io/cyclops/api/tutorials',
               },
             ],
           },
