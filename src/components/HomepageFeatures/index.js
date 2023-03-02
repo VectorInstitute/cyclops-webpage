@@ -4,7 +4,7 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'Rigorous evaluation',
+    title: 'Rigorous Evaluation',
     Svg: require('@site/static/img/eval.svg').default,
     description: (
       <>
@@ -13,12 +13,12 @@ const FeatureList = [
     ),
   },
   {
-    title: 'Deployment and operationalization',
+    title: 'Deployment and Operationalization',
     Svg: require('@site/static/img/deploy.svg').default,
     description: (
       <>
-        By leveraging powerful open source tools, CyclOps provides a modular and extensible
-        MLOps platform for health
+        By leveraging powerful open source tools, CyclOps provides a modular and
+        extensible MLOps platform for health
       </>
     ),
   },
@@ -26,10 +26,7 @@ const FeatureList = [
     title: 'Monitoring',
     Svg: require('@site/static/img/mon.svg').default,
     description: (
-      <>
-        CyclOps supports monitoring of clinical ML models for dataset
-        shifts
-      </>
+      <>CyclOps supports monitoring of clinical ML models for dataset shifts</>
     ),
   },
   // {
