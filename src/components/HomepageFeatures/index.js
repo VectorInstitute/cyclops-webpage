@@ -27,7 +27,7 @@ const FeatureList = [
     Svg: require('@site/static/img/mon.svg').default,
     description: (
       <>
-        CyclOps supports monitoring of clincial ML models for malignant dataset
+        CyclOps supports monitoring of clinical ML models for dataset
         shifts
       </>
     ),
