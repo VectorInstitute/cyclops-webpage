@@ -8,8 +8,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'CyclOps',
   tagline: 'Cyclical development towards Operationalizing ML models for health',
-  url: 'https://cyclops.page',
-  baseUrl: '/',
+  url: 'https://vectorinstitute.github.io',
+  baseUrl: '/cyclops/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
