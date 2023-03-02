@@ -8,8 +8,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'CyclOps',
   tagline: 'Cyclical development towards Operationalizing ML models for health',
-  url: 'https://cyclops.page',
-  baseUrl: '/',
+  url: 'https://vectorinstitute.github.io',
+  baseUrl: '/cyclops/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
@@ -18,6 +18,7 @@ const config = {
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'VectorInstitute', // Usually your GitHub org/user name.
   projectName: 'cyclops', // Usually your repo name.
+  deploymentBranch: 'github_pages', // Branch that GitHub pages will deploy from.
 
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
@@ -65,11 +66,11 @@ const config = {
         items: [
           {
             label: 'API',
-            to: 'https://vectorinstitute.github.io/cyclops/',
+            to: 'https://vectorinstitute.github.io/cyclops/api',
           },
           {
             label: 'Tutorial',
-            to: 'https://vectorinstitute.github.io/cyclops/tutorials.html',
+            to: 'https://vectorinstitute.github.io/cyclops/api/tutorials',
           },
           // {
           //   type: 'doc',
@@ -93,11 +94,11 @@ const config = {
             items: [
               {
                 label: 'API',
-                to: 'https://vectorinstitute.github.io/cyclops/',
+                to: 'https://vectorinstitute.github.io/cyclops/api',
               },
               {
                 label: 'Tutorial',
-                to: 'https://vectorinstitute.github.io/cyclops/tutorials.html',
+                to: 'https://vectorinstitute.github.io/cyclops/api/tutorials',
               },
             ],
           },

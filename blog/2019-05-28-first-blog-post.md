@@ -1,12 +1,12 @@
 ---
-slug: first-blog-post
-title: First Blog Post
+slug: cyclops-alpha-release
+title: CyclOps Alpha Release
 authors:
-  name: Gao Wei
-  title: Docusaurus Core Team
-  url: https://github.com/wgao19
-  image_url: https://github.com/wgao19.png
-tags: [hola, docusaurus]
+  name: Amrit Krishnan
+  title: Vector AI Engineering
+  url: https://github.com/amrit110
+  image_url: https://github.com/amrit110.png
+tags: [alpha]
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet
+Lorem 
