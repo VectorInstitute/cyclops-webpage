@@ -9,4 +9,5 @@ authors:
 tags: [alpha]
 ---
 
-Lorem 
+Developing machine learning (ML) systems for clinical use cases is difficult. Furthermore, evaluating ML models
+to deem that they are performant across patient sub-populations is crucial for adoption into clinical care.
