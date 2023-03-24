@@ -60,17 +60,19 @@ const config = {
       navbar: {
         title: '',
         logo: {
-          alt: 'My Site Logo',
+          alt: 'CyclOps Logo',
           src: 'img/cyclops_logo-dark.png',
         },
         items: [
           {
-            label: 'API',
             to: 'https://vectorinstitute.github.io/cyclops/api',
+            label: 'API',
+            target: '_self',
           },
           {
             label: 'Tutorial',
             to: 'https://vectorinstitute.github.io/cyclops/api/tutorials',
+            target: '_self',
           },
           // {
           //   type: 'doc',
@@ -95,10 +97,12 @@ const config = {
               {
                 label: 'API',
                 to: 'https://vectorinstitute.github.io/cyclops/api',
+                target: '_self',
               },
               {
                 label: 'Tutorial',
                 to: 'https://vectorinstitute.github.io/cyclops/api/tutorials',
+                target: '_self',
               },
             ],
           },
@@ -121,6 +125,9 @@ const config = {
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
+      },
+      colorMode: {
+        disableSwitch: true,
       },
     }),
 };
