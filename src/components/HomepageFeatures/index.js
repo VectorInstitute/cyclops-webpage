@@ -18,7 +18,7 @@ const FeatureList = [
     description: (
       <>
         By leveraging powerful open source tools, CyclOps provides a modular and
-        extensible MLOps platform for health
+        extensible MLOps platform for healthcare
       </>
     ),
   },
