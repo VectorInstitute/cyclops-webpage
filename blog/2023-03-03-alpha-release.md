@@ -1,13 +1,103 @@
 ---
-slug: cyclops-alpha-release
-title: CyclOps Alpha Release
+slug: cyclops-0.2.0-release
+title: cyclops 0.2.0 release
 authors:
-  name: Amrit Krishnan
-  title: Vector AI Engineering
-  url: https://github.com/amrit110
-  image_url: https://github.com/amrit110.png
-tags: [alpha]
+  - name: Carolyn Chong
+    title: Senior Product Manager
+    url: https://github.com/carolynchong
+    image_url: https://github.com/carolynchong.png
+  - name: Amrit Krishnan
+    title: Technical Team Lead
+    url: https://github.com/amrit110
+    image_url: https://github.com/amrit110.png
+tags: [0.2.0]
 ---
 
-Developing machine learning (ML) systems for clinical use cases is difficult. Furthermore, evaluating ML models
-to deem that they are performant across patient sub-populations is crucial for adoption into clinical care.
+---
+
+We’re excited to share the release of our latest version of `cyclops`, an open-source software toolkit to implement machine learning models for health care.
+Our new version follows the release of [Vector Institute's AI Trust and Safety Principles](https://vectorinstitute.ai/ai-trust-and-safety-principles/), that are essential considerations to be taken into account when developing and deploying AI solutions.
+
+The new version includes the following new features and improvements:
+
+### Model reports for evaluating and monitoring clinical ML models
+
+Tailored for clinicians, data scientists and ML engineers, cyclops now allows users to generate model reports using a report API. ML teams building clinical ML models can use the report API to build custom model reports for their use case. The report API supports interactive plots, tooltips, trend analysis, threshold limits, and timestamps so that you can monitor the performance of your model over time. The model report also includes a sidebar that displays your model’s metadata so that your model’s information is easily visible.
+
+We believe that increased model transparency allows clinical ML teams to develop and deploy ML models in a safe and responsible manner.
+
+![](./model_transparency.svg)
+
+Check out an example model report [here](https://vectorinstitute.github.io/cyclops/api/tutorials/nihcxr/nihcxr_report_periodic.html) and a [tutorial](https://vectorinstitute.github.io/cyclops/api/tutorials/kaggle/heart_failure_prediction.html) showcasing the use of the report API!
+
+### An experimental evaluation metrics package that demonstrates cross-framework compatibility
+
+We are introducing a new experimental metrics package which adopts the [array API standard](https://data-apis.org/array-api/latest/), and provides distributed computation support using [torch.distributed](https://pytorch.org/docs/stable/distributed.html) and [mpi4py](https://mpi4py.readthedocs.io/en/stable/) backends. The array API standard allows array-consuming libraries like cyclops to support functionality across array types like [NumPy](https://numpy.org/), [CuPy](https://cupy.dev/) and [PyTorch](https://pytorch.org/).
+
+Let's see how the cross-framework compatibility works with an example. In this example we compute the confusion matrix using the function provided by [scikit-learn](https://scikit-learn.org/) against the one provided by cyclops. The inputs are numpy arrays.
+
+```python
+import numpy as np
+from sklearn.metrics import confusion_matrix
+from cyclops.evaluate.metrics.experimental.functional.confusion_matrix import (
+    binary_confusion_matrix,
+)
+
+
+y_true = np.random.randint(0, 2, size=10)
+y_pred = np.random.rand(10)
+y_pred_discrete = (y_pred > 0.5).astype(int)
+
+print("cyclops confusion matrix\n", binary_confusion_matrix(y_true, y_pred_discrete))
+print("scikit-learn confusion matrix\n", confusion_matrix(y_true, y_pred_discrete))
+```
+
+results in
+
+```bash
+cyclops confusion matrix
+ [[2 3]
+ [4 1]]
+scikit-learn confusion matrix
+ [[2 3]
+ [4 1]]
+```
+
+Similarly, when the inputs are torch tensors, we compare with the function provided by the [torchmetrics](https://torchmetrics.readthedocs.io/en/stable/) library.
+
+```python
+import numpy as np
+import torch
+from torchmetrics.functional.classification.confusion_matrix import (
+   binary_confusion_matrix as torch_binary_confusion_matrix,
+)
+from cyclops.evaluate.metrics.experimental.functional.confusion_matrix import (
+   binary_confusion_matrix,
+)
+
+
+y_true = np.random.randint(0, 2, size=10)
+y_pred = np.random.rand(10)
+target = torch.asarray(y_true)
+preds = torch.asarray(y_pred)
+
+print("cyclops confusion matrix\n", binary_confusion_matrix(y_true, y_pred_discrete))
+print("torchmetrics confusion matrix\n", torch_binary_confusion_matrix(y_true, y_pred_discrete))
+```
+
+results in
+
+```bash
+cyclops confusion matrix
+ [[2 3]
+ [4 1]]
+torchmetrics confusion matrix
+ [[2 3]
+ [4 1]]
+```
+
+### A simple and unified data API
+
+To process and create datasets for training, inference and evaluation. We use the popular 🤗 [datasets](https://github.com/huggingface/datasets) library for efficiently slicing different modalities of data to create subsets for evaluation and monitoring. It has new methods, improved generalizability, and uses [Pandas 2.0](https://pandas.pydata.org/docs/dev/whatsnew/index.html#release).
+
+Check out an example [tutorial](https://vectorinstitute.github.io/cyclops/api/tutorials/kaggle/heart_failure_prediction.html) that showcases the use of the `cyclops.data` API to create slices of data for evaluation!
