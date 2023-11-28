@@ -1,13 +1,13 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
-const lightCodeTheme = require('prism-react-renderer/themes/github');
-const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+const lightCodeTheme = require('prism-react-renderer').themes.github;
+const darkCodeTheme = require('prism-react-renderer').themes.dracula;
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'CyclOps',
-  tagline: 'Cyclical development towards Operationalizing ML models for health',
+  tagline: 'Cyclical development towards Operationalizing ML models for healthcare',
   url: 'https://vectorinstitute.github.io',
   baseUrl: '/cyclops/',
   onBrokenLinks: 'throw',
