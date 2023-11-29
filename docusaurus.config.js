@@ -6,8 +6,9 @@ const darkCodeTheme = require('prism-react-renderer').themes.dracula;
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'CyclOps',
-  tagline: 'Cyclical development towards Operationalizing ML models for healthcare',
+  title: 'cyclops',
+  tagline:
+    'Cyclical development towards Operationalizing ML models for healthcare',
   url: 'https://vectorinstitute.github.io',
   baseUrl: '/cyclops/',
   onBrokenLinks: 'throw',
@@ -60,7 +61,7 @@ const config = {
       navbar: {
         title: '',
         logo: {
-          alt: 'CyclOps Logo',
+          alt: 'cyclops Logo',
           src: 'img/cyclops_logo-dark.png',
         },
         items: [
