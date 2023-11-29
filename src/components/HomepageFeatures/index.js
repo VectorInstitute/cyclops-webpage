@@ -8,25 +8,28 @@ const FeatureList = [
     Svg: require('@site/static/img/eval.svg').default,
     description: (
       <>
-        CyclOps APIs support rigorous evaluation across patient sub-populations
+        cyclops APIs support rigorous evaluation across patient sub-populations
       </>
     ),
   },
-  {
-    title: 'Deployment and Operationalization',
-    Svg: require('@site/static/img/deploy.svg').default,
-    description: (
-      <>
-        By leveraging powerful open source tools, CyclOps provides a modular and
-        extensible MLOps platform for healthcare
-      </>
-    ),
-  },
+  // {
+  //   title: 'Deployment and Operationalization',
+  //   Svg: require('@site/static/img/deploy.svg').default,
+  //   description: (
+  //     <>
+  //       By leveraging powerful open source tools, CyclOps provides a modular and
+  //       extensible MLOps platform for healthcare
+  //     </>
+  //   ),
+  // },
   {
     title: 'Monitoring',
     Svg: require('@site/static/img/mon.svg').default,
     description: (
-      <>CyclOps supports monitoring of clinical ML models for dataset shifts</>
+      <>
+        cyclops supports monitoring of clinical ML models for performance
+        degradation
+      </>
     ),
   },
   // {
@@ -43,7 +46,7 @@ const FeatureList = [
 
 function Feature({ Svg, title, description }) {
   return (
-    <div className={clsx('col col--4')}>
+    <div className={clsx('col col--6')}>
       <div className="text--center">
         <Svg className={styles.featureSvg} role="img" />
       </div>

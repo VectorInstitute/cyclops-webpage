@@ -101,3 +101,7 @@ torchmetrics confusion matrix
 To process and create datasets for training, inference and evaluation. We use the popular 🤗 [datasets](https://github.com/huggingface/datasets) library for efficiently slicing different modalities of data to create subsets for evaluation and monitoring. It has new methods, improved generalizability, and uses [Pandas 2.0](https://pandas.pydata.org/docs/dev/whatsnew/index.html#release).
 
 Check out an example [tutorial](https://vectorinstitute.github.io/cyclops/api/tutorials/kaggle/heart_failure_prediction.html) that showcases the use of the `cyclops.data` API to create slices of data for evaluation!
+
+### Next steps
+
+We believe that the model report will enable increased transparency around model development, and help with auditing of ML systems that are deployed in clinical settings. We are working with early adopter stakeholders on a few different use cases to pilot the model report. Stay tuned for updates and improvements as we learn more about how clinical ML teams use cyclops!
