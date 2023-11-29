@@ -8,7 +8,7 @@ const FeatureList = [
     Svg: require('@site/static/img/eval.svg').default,
     description: (
       <>
-        CyclOps APIs support rigorous evaluation across patient sub-populations
+        cyclops APIs support rigorous evaluation across patient sub-populations
       </>
     ),
   },
@@ -26,7 +26,10 @@ const FeatureList = [
     title: 'Monitoring',
     Svg: require('@site/static/img/mon.svg').default,
     description: (
-      <>CyclOps supports monitoring of clinical ML models for dataset shifts</>
+      <>
+        cyclops supports monitoring of clinical ML models for performance
+        degradation
+      </>
     ),
   },
   // {
