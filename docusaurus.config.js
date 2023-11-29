@@ -115,7 +115,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} CyclOps, built by AI Engineering @ Vector Institute`,
+        copyright: `Copyright © ${new Date().getFullYear()} cyclops, built by AI Engineering @ Vector Institute`,
       },
       prism: {
         theme: lightCodeTheme,
