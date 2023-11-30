@@ -6,7 +6,7 @@ const darkCodeTheme = require('prism-react-renderer').themes.dracula;
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'cyclops',
+  title: 'CyclOps',
   tagline:
     'Cyclical development towards Operationalizing ML models for healthcare',
   url: 'https://vectorinstitute.github.io',
@@ -61,7 +61,7 @@ const config = {
       navbar: {
         title: '',
         logo: {
-          alt: 'cyclops Logo',
+          alt: 'CyclOps Logo',
           src: 'img/cyclops_logo-dark.png',
         },
         items: [
@@ -115,7 +115,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} cyclops, built by AI Engineering @ Vector Institute`,
+        copyright: `Copyright © ${new Date().getFullYear()} CyclOps, built by AI Engineering @ Vector Institute`,
       },
       prism: {
         theme: lightCodeTheme,
